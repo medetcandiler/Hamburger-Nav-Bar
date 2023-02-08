@@ -14,7 +14,7 @@ Hello Everyone. Let me briefly introduce myself to you. First of all I am so gla
 ---
 Sample of the project:
 
-![sample-of-my-project](https://github.com/medetcandiler/Login-and-Registration-Form/blob/main/login-and-registar-form.gif)
+![sample-of-my-project](https://github.com/medetcandiler/Hamburger-Nav-Bar/blob/main/sapmle-of-hamburger-nav.gif)
 
 ## Prepared by
 **Medetcan Diler**
