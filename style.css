@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+a:hover{
+    color: dodgerblue;
+    transition: .3s ease-in;
+}
+li{
+    list-style-type: none;
+}
+.nav{
+    background-color: #020202;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+    height: 5rem;
+    align-items: center;
+}
+.logo-area{
+    font-size: 2.5rem;
+}
+.nav-area{
+    font-size: 1.1rem;
+}
+.nav-area{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.nav-item{
+    transition: .4s ease-out;
+}
+
+.ham-area{
+    display: none;
+}
+.ham-item{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0px;
+    transition: .4 ease;
+    background-color: #f2f2f2;
+}
+@media( width <= 770px){
+    .ham-area{
+        display: block;
+        cursor: pointer;
+    }
+    .ham-item{
+        transition: .3s ease-in;
+    }
+    .ham-area:hover .ham-item{
+        background-color: dodgerblue;
+    }
+    .ham-area.active .ham-item:nth-child(2){
+        opacity: 0;
+    }
+    .ham-area.active .ham-item:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .ham-area.active .ham-item:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-area{
+        position: fixed;
+        top: -20rem;
+        left: 0%;
+        gap: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background-color: #020202;
+        transition: .3s ease-out;
+        cursor: pointer;
+    }
+    .nav-item {
+        border-bottom: 1px solid #f2f2f2;
+        padding: 1rem 0px;
+        transition: .3s ease-in;
+    }
+    .nav-item:hover{
+        border-bottom: 1px solid dodgerblue;
+        color: dodgerblue;
+    }
+    a{
+        transition: .3s ease-in;
+    }
+    .nav-item:hover a{
+        color: dodgerblue;
+    }
+    .nav-area.active{
+        top: 4rem;
+        left: 0%;
+    }
+}
+@media( width <= 400px){
+    .container{
+        margin: 0px 2rem;
+    }
+}
+
